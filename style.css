@@ -1,0 +1,129 @@
+/*
+Theme Name: stpress
+Theme URI: https://github.com/shimotmk/stpress
+Description: Bootstrap4ベースのスターターテーマ
+Author: Tomoki Shimomura
+Author URI: https://shimotmk.com
+Version: 1.0.1
+Tags: blog,grid-layout
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: stpress
+Tested up to: 5.7
+Requires PHP: 7.3
+*/
+
+* {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/*必須css*/
+/*画像にキャプションを付けた時*/
+.wp-caption {
+
+}
+
+.wp-caption-text {
+
+}
+
+.gallery-caption {
+
+}
+
+/*コメント欄で管理者がしたコメントにつくcss*/
+.bypostauthor {
+  border: 1px solid #b3b1b1;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.alignright {
+
+}
+
+.alignleft {
+
+}
+
+.aligncenter {
+
+}
+
+/*アクセシビリティに関するcss
+https://codex.wordpress.org/CSS#:~:text=readers-,screen-reader-text,-border
+*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+/*ページネーション*/
+.nav-links {
+  clear: both;
+  margin:0 auto 20px;
+}
+@media (max-width: 576px) {
+  .nav-links {
+    font-size: 10px;
+  }
+}
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.page-numbers {
+  padding: 9px 12px;
+  border: 1px solid #6c757d;
+  display: inline-block;
+  color: #6c757d;
+}
+.page-numbers:hover:not(.current) {
+  color: #6c757d;
+  text-decoration: none;
+}
+.nav-links li {
+  margin-left: 10px;
+}
+.current {
+  color: white;
+  padding: 9px 12px;
+  border: 1px solid #6c757d;
+  background-color: #6c757d;
+}
+
+/*コメント欄*/
+input {
+  display: block;
+}
+
+
+/*
+コンテンツ内の要素
+*/
+.the_content img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*object*/
+.media-object {
+  max-height: 46px;
+  object-fit: cover;
+}
+
+.the_content a {
+	text-decoration: underline!important;
+}
