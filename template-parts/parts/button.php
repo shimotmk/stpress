@@ -1,5 +1,11 @@
 <?php
 /**
+ * Button template.
+ *
+ * @package stpress
+ */
+
+/**
  * ボタン
  * ob_start,ob_get_cleanはバッファリング(出力)を制御します
  * https://www.php.net/manual/ja/function.ob-start.php
@@ -16,7 +22,7 @@ ob_start();
 	</a>
 </div>
 <?php
-$template = ob_get_clean();
-$template = apply_filters( 'stpress_parts_button_template', $template );
-echo $template;
+$stpress_button_template = ob_get_clean();
+$stpress_button_template = apply_filters( 'stpress_parts_button_template', $stpress_button_template );
+echo wp_kses( $stpress_button_template, wp_kses_allowed_html( 'post' ) );
 do_action( 'stpress_parts_button_after' );

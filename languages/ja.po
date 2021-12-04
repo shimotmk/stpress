@@ -21,3 +21,94 @@ msgstr "ページが見つかりませんでした。"
 #: 404.php:9
 msgid "Keyword"
 msgstr "キーワード"
+
+#: searchform.php:9
+msgid "Search for"
+msgstr "Search for"
+
+#: footer.php:36
+msgid "Copyright - %1$s, %2$s All Rights Reserved."
+msgstr "Copyright - %1$s, %2$s All Rights Reserved."
+
+#: class-stpress-portfolio.php:19
+msgid "Footer Portfolio"
+msgstr "フッターポートフォリオ"
+
+#: class-stpress-portfolio.php:21
+msgid "Footer Displays the portfolio menu."
+msgstr "フッター ポートフォリオメニューを表示します。"
+
+#: class-stpress-portfolio.php:88
+msgid "Appearance > Menu will display the menu you set for the footer portfolio."
+msgstr "外観 > メニュー でフッター ポートフォリオに設定したメニューが表示されます。"
+
+#: class-stpress-portfolio.php:90
+msgid "Title"
+msgstr "タイトル"
+
+#: widgets.php:21
+msgid "sidebar"
+msgstr "サイドバー"
+
+#: widgets.php:30
+msgid "Footer Left"
+msgstr "フッター左"
+
+#: widgets.php:41
+msgid "Footer Center"
+msgstr "フッター中"
+
+#: widgets.php:52
+msgid "Footer Right"
+msgstr "フッター右"
+
+#: sidebar.php:15
+msgid "Articles you should read"
+msgstr "読んで欲しい記事"
+
+#: single.php:22
+#: index.php:50
+#: page.php:29
+#: archive.php:34
+msgid "No article available."
+msgstr "記事がありません。"
+
+#: class-nav_menus.php:7
+msgid "Global"
+msgstr "グローバル"
+
+#: class-nav_menus.php:8
+msgid "Footer"
+msgstr "フッター"
+
+#: author.php:16
+msgid "Author"
+msgstr "投稿者"
+
+#: related.php:30
+msgid "Related"
+msgstr "関連記事"
+
+#: time.php:17
+msgid "Update Date:"
+msgstr "更新日:"
+
+#: content.php:52
+msgid "Tag"
+msgstr "タグ"
+
+#: comments.php:6
+msgid "Reply"
+msgstr "返信する"
+
+#: comments.php:33
+msgid "name"
+msgstr "名前"
+
+#: comments.php:40
+msgid "Save your name, email address, and site to your browser for use in your next comment."
+msgstr "次回のコメントで使用するためブラウザーに自分の名前、メールアドレス、サイトを保存する。"
+
+#: comments.php:47
+msgid "Comment"
+msgstr "コメント"

@@ -1,5 +1,12 @@
-<?php get_header(); ?>
-<main class="bg-light">
+<?php
+/**
+ * The single.php template.
+ *
+ * @package stpress
+ */
+
+get_header(); ?>
+<main id="content" class="bg-light">
 	<div id="post-<?php the_ID(); ?>" <?php post_class( 'container' ); ?>>
 		<div class="row pt-3">
 			<!-- メインコンテンツ -->
@@ -9,10 +16,10 @@
 				if ( have_posts() ) {
 					while ( have_posts() ) {
 						the_post();
-						get_template_part('template-parts/singular/content');
+						get_template_part( 'template-parts/singular/content' );
 					}
 				} else {
-					echo "記事がありません。";
+					echo __('No article available.', 'stpress');
 				}
 				?>
 			</div>

@@ -1,10 +1,15 @@
 <?php
 /**
+ * Content template.
+ *
  * コンテンツ
+ *
+ * @package stpress
  */
+
 do_action( 'stpress_parts_content_before' );
 ?>
-<div id="the_content" class="the_content">
+<div class="the_content">
 	<?php
 	/**
 	 * 本文

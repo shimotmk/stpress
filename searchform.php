@@ -1,15 +1,17 @@
 <?php
 /**
+ * The searchform.php template.
+ *
+ * @package stpress
+ */
+
+/**
  * 検索フォームテンプレート
  */
 do_action( 'stpress_parts_searchform_before' );
-ob_start();
 ?>
 <form method="get" action="<?php esc_url( home_url( '/' ) ); ?>">
-	<input class="form-control" type="text" name="s" placeholder="Search for">
+	<input class="form-control" type="text" name="s" placeholder="<?php esc_attr_e( 'Search for', 'stpress' ); ?>">
 </form>
 <?php
-$template = ob_get_clean();
-$template = apply_filters( 'stpress_parts_searchform_template', $template );
-echo $template;
 do_action( 'stpress_parts_searchform_after' );

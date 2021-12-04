@@ -1,22 +1,34 @@
 <?php
 /**
+ * Custom header template.
+ *
+ * カスタムヘッダー
  * get_uploaded_header_images
  * https://developer.wordpress.org/reference/functions/get_uploaded_header_images/
+ *
+ * @package stpress
  */
-$headers = get_uploaded_header_images();
+
+$stpress_headers = get_uploaded_header_images();
 do_action( 'stpress_parts_custom_header_before' );
 ob_start();
 ?>
-<?php if( count($headers) == 1 ): ?>
-	<?php foreach ($headers as $key => $value): ?>
-		<img class="img-fluid pt-3" src="<?php echo $value['url']; ?>" alt="<?php echo $value['alt_text']; ?>">
+<?php if ( count( $stpress_headers ) === 1 ) : ?>
+	<?php foreach ( $stpress_headers as $stpress_custom_header_key => $stpress_custom_header_value ) : ?>
+		<img class="img-fluid pt-3" src="<?php echo esc_url( $stpress_custom_header_value['url'] ); ?>" alt="<?php echo esc_attr( $stpress_custom_header_value['alt_text'] ); ?>">
 	<?php endforeach; ?>
-<?php else: ?>
+<?php else : ?>
 	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
-			<?php foreach ($headers as $key => $value): ?>
-				<div class="carousel-item <?php if ($value !== end($headers)) { echo "active"; } ?>">
-					<img src="<?php echo $value['url']; ?>" alt="<?php echo $value['alt_text']; ?>">
+			<?php foreach ( $stpress_headers as $stpress_custom_header_key => $stpress_custom_header_value ) : ?>
+				<div class="carousel-item
+				<?php
+				if ( end( $stpress_headers ) !== $stpress_custom_header_value ) {
+					echo 'active';
+				}
+				?>
+				">
+					<img src="<?php echo esc_url( $stpress_custom_header_value['url'] ); ?>" alt="<?php echo esc_attr( $stpress_custom_header_value['alt_text'] ); ?>">
 				</div>
 			<?php endforeach; ?>
 		</div>
@@ -31,7 +43,7 @@ ob_start();
 	</div>
 <?php endif; ?>
 <?php
-$template = ob_get_clean();
-$template = apply_filters( 'stpress_parts_custom_header_template', $template );
-echo $template;
+$stpress_custom_header_template = ob_get_clean();
+$stpress_custom_header_template = apply_filters( 'stpress_parts_custom_header_template', $stpress_custom_header_template );
+echo wp_kses( $stpress_custom_header_template, wp_kses_allowed_html( 'post' ) );
 do_action( 'stpress_parts_custom_header_after' );

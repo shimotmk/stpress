@@ -1,0 +1,17 @@
+{
+  "name": "stpress",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimotmk/stpress.git"
+  },
+  "author": "",
+  "license": "GPL-2.0+",
+  "bugs": {
+    "url": "https://github.com/shimotmk/stpress/issues"
+  },
+  "homepage": "https://github.com/shimotmk/stpress#readme"
+}

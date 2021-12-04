@@ -1,10 +1,16 @@
-	<?php
-		/**
-		 * パンくずリスト
-		 */
-		$my_breadcrumb = new MY_Breadcrumbs();
-		echo $my_breadcrumb->my_breadcrumb();
-	?>
+<?php
+/**
+ * The footer.php template.
+ *
+ * @package stpress
+ */
+
+	/**
+	 * パンくずリスト
+	 */
+	$stpress_breadcrumb = new stpress_breadcrumbs();
+	echo wp_kses( $stpress_breadcrumb->stpress_breadcrumb(), wp_kses_allowed_html( 'post' ) );
+?>
 	<footer class="bg-white">
 		<div class="container">
 			<div class="row">
@@ -32,7 +38,9 @@
 			</div>
 		</div>
 		<div class="bg-dark text-white text-center p-3">
-			Copyright - <?php echo esc_html( get_option( 'blogname' )); ?>, <?php echo date("Y"); ?> All Rights Reserved.
+			<?php
+			echo printf(__( 'Copyright - %1$s, %2$s All Rights Reserved.', 'stpress' ), get_bloginfo( 'name' ), date( 'Y' ) );
+			?>
 		</div>
 	</footer>
 <?php wp_footer(); ?>

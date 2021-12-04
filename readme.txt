@@ -17,6 +17,12 @@ Bootstrap based,Supports customizer, Responsive Layout, Page Navigation, Breadcr
 == License ==
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License version 3.
 
+stpress WordPress Theme bundles the following third-party resources:
+
+Bootstrap framework, Copyright 2011 Bootstrap Authors and Twitter, Inc.
+Bootstrap is licensed under the terms of the MIT license
+Source: https://getbootstrap.com/
+
 == Author ==
 The theme built by Tomoki Shimomura.
 You can contact me at Twitter.

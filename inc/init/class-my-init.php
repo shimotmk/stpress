@@ -9,7 +9,7 @@ function my_after_setup_theme() {
 	 * 翻訳ファイル
 	 * ナビゲーション
 	 */
-	load_theme_textdomain ('stpress', get_template_directory() . '/languages');
+	load_theme_textdomain( 'stpress', get_template_directory() . '/languages' );
 
 	/**
 	 * タイトル出力
@@ -78,9 +78,7 @@ function my_after_setup_theme() {
 	 * Add skip link
 	 */
 	function stpress_wp_body_open( $output ) {
-		echo '<a class="skip-link screen-reader-text" href="#the_content">' . esc_html__( 'Skip to the content', 'stpress' ) . '</a>';
+		echo '<a class="skip-link screen-reader-text" href="#content">' . esc_html__( 'Skip to the content', 'stpress' ) . '</a>';
 	}
 	add_action( 'wp_body_open', 'stpress_wp_body_open', 5 );
-
-
 }

@@ -14,7 +14,7 @@ do_action( 'stpress_archive_content_before' );
 	/**
 	 * 記事タイトル
 	 */
-	the_title( '<h2 class="pb-3 font-weight-bolder"><a class="text-reset" href="'.  esc_url( get_permalink() ) .'">', '</h2>' );
+	the_title( '<h2 class="pb-3 font-weight-bolder"><a class="text-reset" href="' . esc_url( get_permalink() ) . '">', '</h2>' );
 
 	/**
 	 * カテゴリー
@@ -24,7 +24,7 @@ do_action( 'stpress_archive_content_before' );
 	/**
 	 * サムネイル
 	 */
-	get_template_part( 'template-parts/parts/thumbnail', null, array( "add_class" => "row" ) );
+	get_template_part( 'template-parts/parts/thumbnail', null, array( 'add_class' => 'row' ) );
 
 	/**
 	 * ディスクリプション
@@ -34,7 +34,7 @@ do_action( 'stpress_archive_content_before' );
 	/**
 	 * ボタン
 	 */
-	get_template_part('template-parts/parts/button' );
+	get_template_part( 'template-parts/parts/button' );
 	?>
 
 </div>

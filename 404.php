@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="bg-light">
+<main id="content" class="bg-light">
 	<div id="post-<?php the_ID(); ?>" <?php post_class( 'container' ); ?>>
 		<div class="row pt-3">
 			<!-- メインコンテンツ -->

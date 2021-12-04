@@ -24,7 +24,7 @@ do_action( 'stpress_singular_content_before' );
 	/**
 	 * サムネイル
 	 */
-	get_template_part( 'template-parts/parts/thumbnail', null, array( "add_class" => "row" ) );
+	get_template_part( 'template-parts/parts/thumbnail', null, array( 'add_class' => 'row' ) );
 
 	/**
 	 * 本文
@@ -49,7 +49,7 @@ do_action( 'stpress_singular_content_before' );
 	/**
 	 * タグ
 	 */
-	the_tags( 'タグ', ', ', '<br />' );
+	the_tags( __('Tag', 'stpress'), ', ', '<br />' );
 	?>
 </div>
 <?php

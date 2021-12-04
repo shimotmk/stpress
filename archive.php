@@ -1,5 +1,14 @@
-<?php get_header(); ?>
-<main class="bg-light">
+<?php
+/**
+ * The archive.php template.
+ *
+ * フッターポートフォリオメニュー
+ *
+ * @package stpress
+ */
+
+get_header(); ?>
+<main id="content" class="bg-light">
 	<div id="post-<?php the_ID(); ?>" <?php post_class( 'container' ); ?>>
 		<div class="row pt-3">
 			<div class="col-md-8 col-xs-12">
@@ -8,7 +17,7 @@
 					/**
 					 * アーカイブタイトル
 					 */
-					the_archive_title('<div class="py-3"><h1 class="h2">', '</h1></div>');
+					the_archive_title( '<div class="py-3"><h1 class="h2">', '</h1></div>' );
 					while ( have_posts() ) {
 						the_post();
 						get_template_part( 'template-parts/archive/content' );
@@ -22,7 +31,7 @@
 						)
 					);
 				} else {
-					echo "記事がありません。";
+					echo __('No article available.', 'stpress');
 				}
 
 				?>

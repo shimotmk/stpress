@@ -1,8 +1,13 @@
 <?php
 /**
- * wp-queryで呼び出した時のテンプレート
+ * WP_Query Content template.
+ *
+ * WP_Queryで呼び出した時のテンプレート
  * index.phpで使われる
+ *
+ * @package stpress
  */
+
 do_action( 'stpress_wp_query_content_before' );
 ?>
 <div class="col-md-4 col-12 mb-md-0 mb-5">
@@ -16,12 +21,12 @@ do_action( 'stpress_wp_query_content_before' );
 		/**
 		 * 記事タイトル
 		 */
-		the_title( '<h2 class="h5 px-3 pb-3"><a class="text-reset" href="'.  esc_url( get_permalink() ) .'">', '</h2>' );
+		the_title( '<h2 class="h5 px-3 pb-3"><a class="text-reset" href="' . esc_url( get_permalink() ) . '">', '</h2>' );
 
 		/**
 		 * ボタン
 		 */
-		get_template_part('template-parts/parts/button' );
+		get_template_part( 'template-parts/parts/button' );
 		?>
 	</div>
 </div>

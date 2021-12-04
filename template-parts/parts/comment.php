@@ -1,11 +1,17 @@
 <?php
 /**
+ * Comment template.
+ *
+ * @package stpress
+ */
+
+/**
  * コメント
  */
 do_action( 'stpress_parts_comments_before' );
 ob_start();
 comments_template();
-$template = ob_get_clean();
-$template = apply_filters( 'stpress_parts_comments_template', $template );
-echo $template;
+$stpress_comments_template = ob_get_clean();
+$stpress_comments_template = apply_filters( 'stpress_parts_comments_template', $stpress_comments_template );
+echo $stpress_comments_template;
 do_action( 'stpress_parts_comments_after' );
