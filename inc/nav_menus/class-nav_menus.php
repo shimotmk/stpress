@@ -4,8 +4,8 @@
  */
 register_nav_menus(
 	array(
-		'gloval-navigation' => __('Global', 'stpress'),
-		'footer-navigation' => __('Footer', 'stpress'),
+		'gloval-navigation' => __( 'Global', 'stpress' ),
+		'footer-navigation' => __( 'Footer', 'stpress' ),
 	)
 );
 

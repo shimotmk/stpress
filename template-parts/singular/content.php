@@ -49,7 +49,7 @@ do_action( 'stpress_singular_content_before' );
 	/**
 	 * タグ
 	 */
-	the_tags( __('Tag', 'stpress'), ', ', '<br />' );
+	the_tags( __( 'Tag', 'stpress' ), ', ', '<br />' );
 	?>
 </div>
 <?php

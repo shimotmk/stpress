@@ -13,7 +13,7 @@ ob_start();
 ?>
 <p>
 	<?php
-	echo __('Author', 'stpress');
+	echo __( 'Author', 'stpress' );
 	$stpress_author_posts_url    = get_author_posts_url( get_the_author_meta( 'ID' ) );
 	$stpress_author_display_name = get_the_author_meta( 'display_name' );
 	?>

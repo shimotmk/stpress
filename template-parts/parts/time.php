@@ -14,7 +14,7 @@ ob_start();
 	<?php
 	the_time( 'Y/n/j' );
 	if ( get_the_modified_date( 'Y/n/j' ) ) {
-		the_modified_date( 'Y/n/j', '(' . __('Update Date:', 'stpress'), ')' );
+		the_modified_date( 'Y/n/j', '(' . __( 'Update Date:', 'stpress' ), ')' );
 	}
 	?>
 </p>

@@ -12,7 +12,7 @@ do_action( 'stpress_sidebar_before' );
 	<!--読んで欲しい記事-->
 	<div class="container bg-white mb-5 py-5">
 		<div class="text-center pb-5">
-			<h4 class="d-inline-block py-3 border-bottom border-info"><?php echo __('Articles you should read', 'stpress'); ?></h4>
+			<h4 class="d-inline-block py-3 border-bottom border-info"><?php echo __( 'Articles you should read', 'stpress' ); ?></h4>
 		</div>
 		<?php $stpress_side_query = new WP_Query( 'tag=sidepickup' ); ?>
 		<?php if ( $stpress_side_query->have_posts() ) : ?>

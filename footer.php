@@ -39,7 +39,7 @@
 		</div>
 		<div class="bg-dark text-white text-center p-3">
 			<?php
-			echo printf(__( 'Copyright - %1$s, %2$s All Rights Reserved.', 'stpress' ), get_bloginfo( 'name' ), date( 'Y' ) );
+			echo printf( __( 'Copyright - %1$s, %2$s All Rights Reserved.', 'stpress' ), get_bloginfo( 'name' ), date( 'Y' ) );
 			?>
 		</div>
 	</footer>

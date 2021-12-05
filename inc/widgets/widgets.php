@@ -18,7 +18,7 @@ add_action( 'widgets_init', 'stpress_widgets_register_widget' );
 function stpress_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => __('sidebar', 'stpress'),
+			'name'          => __( 'sidebar', 'stpress' ),
 			'id'            => 'sidebar_widget01',
 			'before_widget' => '<div class="container bg-white mb-5 py-5">',
 			'after_widget'  => '</div>',
@@ -27,7 +27,7 @@ function stpress_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __('Footer Left', 'stpress'),
+			'name'          => __( 'Footer Left', 'stpress' ),
 			'id'            => 'footer_widget01',
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
@@ -38,7 +38,7 @@ function stpress_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __('Footer Center', 'stpress'),
+			'name'          => __( 'Footer Center', 'stpress' ),
 			'id'            => 'footer_widget02',
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',
@@ -49,7 +49,7 @@ function stpress_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => __('Footer Right', 'stpress'),
+			'name'          => __( 'Footer Right', 'stpress' ),
 			'id'            => 'footer_widget03',
 			'before_widget' => '<div>',
 			'after_widget'  => '</div>',

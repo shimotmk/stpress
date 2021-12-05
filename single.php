@@ -19,7 +19,7 @@ get_header(); ?>
 						get_template_part( 'template-parts/singular/content' );
 					}
 				} else {
-					echo __('No article available.', 'stpress');
+					echo __( 'No article available.', 'stpress' );
 				}
 				?>
 			</div>

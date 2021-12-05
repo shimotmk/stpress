@@ -16,9 +16,9 @@ class stpress_portfolio_widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'stpress_portfolio_widget',
-			__('Footer Portfolio', 'stpress'),
+			__( 'Footer Portfolio', 'stpress' ),
 			array(
-				'description' => __('Footer Displays the portfolio menu.', 'stpress'),
+				'description' => __( 'Footer Displays the portfolio menu.', 'stpress' ),
 			)
 		);
 	}
@@ -87,9 +87,9 @@ class stpress_portfolio_widget extends WP_Widget {
 		$author_image_name     = $this->get_field_name( 'title' );
 		$author_image_instance = esc_attr( $instance['title'] );
 		?>
-			<p><?php echo __('Appearance > Menu will display the menu you set for the footer portfolio.', 'stpress'); ?></p>
+			<p><?php echo __( 'Appearance > Menu will display the menu you set for the footer portfolio.', 'stpress' ); ?></p>
 			<p>
-				<label for="<?php echo $author_image_id; ?>"><?php echo __('Title', 'stpress'); ?></label><br>
+				<label for="<?php echo $author_image_id; ?>"><?php echo __( 'Title', 'stpress' ); ?></label><br>
 				<input class="widefat" id="<?php echo $author_image_id; ?>" name="<?php echo $author_image_name; ?>" type="text" value="<?php echo $author_image_instance; ?>" /><br>
 			</p>
 		<?php

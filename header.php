@@ -43,7 +43,7 @@
 			<?php
 			$site_desc = get_bloginfo( 'description' );
 			if ( $site_desc ) :
-			?>
+				?>
 				<span class="d-none d-md-inline"><?php bloginfo( 'description' ); ?></span>
 			<?php endif; ?>
 		</div>
