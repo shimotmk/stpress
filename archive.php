@@ -31,7 +31,7 @@ get_header(); ?>
 						)
 					);
 				} else {
-					echo __( 'No article available.', 'stpress' );
+					echo esc_html__( 'No article available.', 'stpress' );
 				}
 
 				?>

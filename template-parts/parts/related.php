@@ -27,7 +27,7 @@ $stpress_related_args  = array(
 $stpress_related_query = new WP_Query( $stpress_related_args );
 do_action( 'stpress_parts_related_before' );
 ?>
-<h5><?php echo __( 'Related', 'stpress' ); ?></h5>
+<h5><?php echo esc_html__( 'Related', 'stpress' ); ?></h5>
 <div class="row">
 	<?php
 	if ( $stpress_related_query->have_posts() ) :

@@ -1,7 +1,10 @@
 <?php
 /**
- * メニュー機能
+ * Class nav menues.
+ *
+ * @package stpress
  */
+
 register_nav_menus(
 	array(
 		'gloval-navigation' => __( 'Global', 'stpress' ),
