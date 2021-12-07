@@ -1,4 +1,10 @@
 <?php
+/**
+ * コメントテンプレート
+ *
+ * @package stpress
+ */
+
 if ( have_comments() ) {
 	wp_list_comments(
 		array(

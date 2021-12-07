@@ -1,7 +1,7 @@
 === stpress ===
 stpress WordPress theme, Copyright (C) 2021 Tomoki Shimomura.
 stpress WordPress theme is licensed under the GPL.
-Stable tag: 0.1.0
+Stable tag:
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,6 +13,11 @@ two-columns, sidebar, one-columns, responsive, custom-colors, custom-menu, edito
 
 === Features ===
 Bootstrap based,Supports customizer, Responsive Layout, Page Navigation, Breadcrumb Navigation, and more!
+
+== Screenshots ==
+Image for theme screenshot, Copyright Tomoki Shimomura
+License: CC0 1.0 Universal (CC0 1.0)
+Source: screenshot.png
 
 == License ==
 Unless otherwise specified, all the theme files, scripts and images are licensed under GNU General Public License version 3.

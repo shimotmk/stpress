@@ -1,8 +1,14 @@
 <?php
 /**
- * クラス読み込み
+ * Widgets クラス読み込み
+ *
+ * @package stpress
  */
-require_once dirname( __FILE__ ) . '/class-stpress-portfolio.php';
+
+?>
+
+<?php
+require_once dirname( __FILE__ ) . '/class-stpress-portfolio-widget.php';
 
 /**
  * 独自ウィジェットの設定

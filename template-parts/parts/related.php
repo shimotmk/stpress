@@ -46,8 +46,8 @@ do_action( 'stpress_parts_related_before' );
 					<a class="text-reset" href="<?php the_permalink(); ?>">
 					<?php
 					$stpress_related_title = the_title();
-					if ( mb_strlen( $stpress_related_title ) > 20 ) {
-						$stpress_related_title = mb_substr( $stpress_related_title, 0, 20 );
+					if ( strlen( $stpress_related_title ) > 20 ) {
+						$stpress_related_title = strlen( $stpress_related_title, 0, 20 );
 						echo esc_html( $stpress_related_title . '...' );
 					} else {
 						echo esc_html( $stpress_related_title );

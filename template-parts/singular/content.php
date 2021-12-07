@@ -1,7 +1,10 @@
 <?php
 /**
- * single.php,page.phpのコンテンツで表示される
+ * Single.php,page.phpのコンテンツで表示される
+ *
+ * @package stpress
  */
+
 do_action( 'stpress_singular_content_before' );
 ?>
 <div class="bg-white mb-5 py-5 container">
@@ -34,7 +37,7 @@ do_action( 'stpress_singular_content_before' );
 	/**
 	 * コメント
 	 */
-	 get_template_part( 'template-parts/parts/comment' );
+	get_template_part( 'template-parts/parts/comment' );
 
 	/**
 	 * 投稿者

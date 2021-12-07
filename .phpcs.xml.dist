@@ -5,6 +5,8 @@
 	<!-- What to scan -->
 	<file>.</file>
 	<exclude-pattern>/vendor/*</exclude-pattern>
+	<exclude-pattern>comments.php</exclude-pattern>
+	<exclude-pattern>inc/nav_menus/WP_Bootstrap_Navwalker.php</exclude-pattern>
 
 	<!-- How to scan -->
 	<!-- Usage instructions: https://github.com/squizlabs/PHP_CodeSniffer/wiki/Usage -->

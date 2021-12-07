@@ -2,9 +2,16 @@
 /**
  * 初期化処理
  * https://developer.wordpress.org/reference/functions/add_theme_support/
+ *
+ * @package stpress
  */
-add_action( 'after_setup_theme', 'my_after_setup_theme' );
-function my_after_setup_theme() {
+
+add_action( 'after_setup_theme', 'stpress_after_setup_theme' );
+/**
+ * Stpress_after_setup_theme
+ */
+function stpress_after_setup_theme() {
+
 	/**
 	 * 翻訳ファイル
 	 * ナビゲーション
@@ -17,7 +24,7 @@ function my_after_setup_theme() {
 	add_theme_support( 'title-tag' );
 
 	/**
-	 * custom-logo
+	 * Custom-logo
 	 */
 	add_theme_support( 'custom-logo' );
 
@@ -53,7 +60,7 @@ function my_after_setup_theme() {
 	add_theme_support( 'custom-header', $custom_header_defaults );
 
 	/**
-	 * iframeをレスポンシブ対応(16:9)にする
+	 * Iframeをレスポンシブ対応(16:9)にする
 	 */
 	add_theme_support( 'responsive-embeds' );
 
@@ -77,7 +84,7 @@ function my_after_setup_theme() {
 	/**
 	 * Add skip link
 	 */
-	function stpress_wp_body_open( $output ) {
+	function stpress_wp_body_open() {
 		echo '<a class="skip-link screen-reader-text" href="#content">' . esc_html__( 'Skip to the content', 'stpress' ) . '</a>';
 	}
 	add_action( 'wp_body_open', 'stpress_wp_body_open', 5 );

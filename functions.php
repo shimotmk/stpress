@@ -14,6 +14,17 @@
  */
 
 /**
+ * Get Plugin Version
+ *
+ * @return string
+ */
+function stpress_get_version() {
+	$stpress_theme         = wp_get_theme();
+	$stpress_theme_version = $stpress_theme->get( 'Version' );
+	return $stpress_theme_version;
+}
+
+/**
  * After Setup Theme
  *
  * @return void
@@ -30,7 +41,7 @@ add_action( 'after_setup_theme', 'stpress_setup' );
  *
  * @link https://www.php.net/manual/ja/function.require-once.php
  */
-require_once get_template_directory() . '/inc/init/class-my-init.php';
+require_once get_template_directory() . '/inc/init/class-stpress-init.php';
 
 /**
  * Widgets
@@ -41,17 +52,17 @@ require_once get_template_directory() . '/inc/widgets/widgets.php';
  * パンくずリスト
  * breadcrumbs
  */
-require_once get_template_directory() . '/inc/breadcrumbs/class-breadcrumb.php';
+require_once get_template_directory() . '/inc/breadcrumbs/class-stpress-breadcrumbs.php';
 
 /**
  * Nav_menus
  */
-require_once get_template_directory() . '/inc/nav_menus/class-nav_menus.php';
+require_once get_template_directory() . '/inc/nav_menus/class-nav-menus.php';
 
 /**
  * スクリプトとスタイルをエンキューする方法
  */
-require_once get_template_directory() . '/inc/enqueue/my-scripts.php';
+require_once get_template_directory() . '/inc/enqueue/stpress-scripts.php';
 
 /**
  * エディタ内CSS

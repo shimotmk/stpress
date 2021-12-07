@@ -8,7 +8,7 @@
 	/**
 	 * パンくずリスト
 	 */
-	$stpress_breadcrumb = new stpress_breadcrumbs();
+	$stpress_breadcrumb = new Stpress_Breadcrumbs();
 	echo wp_kses( $stpress_breadcrumb->stpress_breadcrumb(), wp_kses_allowed_html( 'post' ) );
 ?>
 	<footer class="bg-white">
@@ -39,7 +39,7 @@
 		</div>
 		<div class="bg-dark text-white text-center p-3">
 			<?php
-			echo printf( __( 'Copyright - %1$s, %2$s All Rights Reserved.', 'stpress' ), get_bloginfo( 'name' ), date( 'Y' ) );
+			printf( __( 'Copyright - %1$s, %2$s All Rights Reserved.', 'stpress' ), esc_html( get_bloginfo( 'name' ) ), date( 'Y' ) );
 			?>
 		</div>
 	</footer>

@@ -2,7 +2,7 @@
 /**
  * Navbar template.
  *
- * https://github.com/wp-bootstrap/wp-bootstrap-navwalker
+ * @see https://github.com/wp-bootstrap/wp-bootstrap-navwalker
  *
  * @package stpress
  */
@@ -36,5 +36,5 @@ ob_start();
 <?php
 $stpress_nav_menus_template = ob_get_clean();
 $stpress_nav_menus_template = apply_filters( 'stpress_parts_nav_menus_template', $stpress_nav_menus_template );
-echo $stpress_nav_menus_template;
+echo wp_kses_post( $stpress_nav_menus_template );
 do_action( 'stpress_parts_nav_menus_after' );

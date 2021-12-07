@@ -28,21 +28,21 @@
 			<a class="text-reset text-decoration-none" href="<?php echo esc_url( home_url( '/' ) ); ?>">
 				<?php
 				if ( has_custom_logo() ) {
-					$get_bloginfo_name = the_custom_logo();
+					$stpress_get_bloginfo_name = the_custom_logo();
 				} else {
-					$get_bloginfo_name = get_bloginfo( 'name' );
+					$stpress_get_bloginfo_name = get_bloginfo( 'name' );
 				}
-				$get_bloginfo_name = apply_filters( 'stpress_header_h1_content', $get_bloginfo_name );
+				$stpress_get_bloginfo_name = apply_filters( 'stpress_header_h1_content', $stpress_get_bloginfo_name );
 				?>
 				<?php if ( is_home() ) { ?>
-					<h1 class="h1 py-3 d-inline-block"><?php echo $get_bloginfo_name; ?></h1>
+					<h1 class="h1 py-3 d-inline-block"><?php echo wp_kses_post( $stpress_get_bloginfo_name ); ?></h1>
 				<?php } else { ?>
-					<div class="h1 py-3 d-inline-block"><?php echo $get_bloginfo_name; ?></div>
+					<div class="h1 py-3 d-inline-block"><?php echo wp_kses_post( $stpress_get_bloginfo_name ); ?></div>
 				<?php } ?>
 			</a>
 			<?php
-			$site_desc = get_bloginfo( 'description' );
-			if ( $site_desc ) :
+			$stpress_site_desc = get_bloginfo( 'description' );
+			if ( $stpress_site_desc ) :
 				?>
 				<span class="d-none d-md-inline"><?php bloginfo( 'description' ); ?></span>
 			<?php endif; ?>
@@ -52,6 +52,6 @@
 
 	<?php
 	/**
-	 * nav_menus
+	 * Nav_menus
 	 */
-	get_template_part( 'template-parts/parts/nav_menus' );
+	get_template_part( 'template-parts/parts/nav-menus' );

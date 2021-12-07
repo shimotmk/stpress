@@ -1,12 +1,11 @@
 <?php
 /**
- * breadcrumb template.
+ * Stpress_Breadcrumbs Breadcrumb template.
  *
  * @package stpress
  */
 
 /**
- *
  * トップページにはパンくずリストは必要ない
  * カテゴリーページには、「HOME > （カテゴリー名）」と表示
  * 月別アーカイブページには「HOME > （日時）」と表示
@@ -19,11 +18,16 @@
  */
 
 /**
+ * Stpress_Breadcrumbs
+ *
  * PHP Classについて
  * https://www.php.net/manual/ja/language.oop5.basic.php
  */
-class stpress_breadcrumbs {
+class Stpress_Breadcrumbs {
 
+	/**
+	 * Get_breadcrumbs
+	 */
 	public static function get_breadcrumbs() {
 
 		/**
@@ -34,7 +38,7 @@ class stpress_breadcrumbs {
 		/**
 		 * フロントページはパンくず表示しない
 		 */
-		if ( is_front_page() or is_home() ) {
+		if ( is_front_page() || is_home() ) {
 			return;
 		}
 
@@ -210,9 +214,12 @@ class stpress_breadcrumbs {
 			);
 		}
 
-		return $list_data = apply_filters( 'stpress_breadcrumb_list_data', $list_data );
+		return apply_filters( 'stpress_breadcrumb_list_data', $list_data );
 	}
 
+	/**
+	 * Stpress_breadcrumb
+	 */
 	public static function stpress_breadcrumb() {
 		$list_data = self::get_breadcrumbs();
 		if ( empty( $list_data ) ) {
@@ -231,7 +238,7 @@ class stpress_breadcrumbs {
 				<ol class="breadcrumb bg-light">
 					<?php
 					foreach ( $list_data as $list ) :
-						if ( $list !== end( $list_data ) ) :
+						if ( end( $list_data ) !== $list ) :
 							?>
 							<li class="breadcrumb-item">
 								<a href="<?php echo esc_url( $list['url'] ); ?>"><?php echo esc_html( $list['name'] ); ?></a>

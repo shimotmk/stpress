@@ -1,7 +1,10 @@
 <?php
 /**
- * archive,indexで使うループ
+ * Archive,indexで使うループ
+ *
+ * @package stpress
  */
+
 do_action( 'stpress_archive_content_before' );
 ?>
 <div class="bg-white text-center mb-5 py-5 container">
