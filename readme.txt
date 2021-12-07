@@ -35,6 +35,12 @@ https://twitter.com/shimo_tmk
 
 == Changelog ==
 
+= 1.0.3 =
+[Specification change] Review change
+
+= 1.0.2 =
+[Specification change] Review change
+
 = 1.0.1 =
 [Specification change] Review change
 
