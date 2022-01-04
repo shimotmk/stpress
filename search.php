@@ -13,7 +13,7 @@ get_header(); ?>
 		<div class="row pt-3">
 			<div class="col-md-8 col-xs-12">
 				<?php
-				$stpress_search_title = apply_filters( 'stpress_search_title_template' ,'<div class="py-3"><h1 class="h2">' . get_search_query() . '</h1></div>' );
+				$stpress_search_title = apply_filters( 'stpress_search_title_template', '<div class="py-3"><h1 class="h2">' . get_search_query() . '</h1></div>' );
 				echo wp_kses_post( $stpress_search_title );
 				if ( have_posts() ) {
 					/**

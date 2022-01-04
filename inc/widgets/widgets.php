@@ -5,9 +5,6 @@
  * @package stpress
  */
 
-?>
-
-<?php
 require_once dirname( __FILE__ ) . '/class-stpress-portfolio-widget.php';
 
 /**
